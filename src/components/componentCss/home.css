@@ -1,0 +1,1565 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/* :root {
+    --primary-color: #ff0000;
+    --secondary-color: #000fff;
+    --text-color: #ccc;
+    --bg-color: #fff000;
+    --white-color: #ffffff;
+    --black-color: #000000;
+    --gradient-color: linear-gradient(128deg, #2983c0 26.39%, #2a84c0 37.52%, #1b60a5 100%);
+    --gradient-hover-cover: linear-gradient(269deg, #2983c0 26.39%, #2a84c0 37.52%, #1b60a5 100%);
+} */
+
+
+:root {
+    --primary-color: #e12454;
+    --secondary-color: #223645;
+    --text-color: #7a8a9e;
+    --bg-color: #ebf5f5;
+    --white-color: #ffffff;
+    --black-color: #000000;
+}
+
+
+
+/* @font-face {
+    font-family: "Nunito", sans-serif;
+    src: url('/src/assets/fonts/nunito-font/Nunito-Light.ttf');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Nunito", sans-serif;
+    src: url('/src/assets/fonts/nunito-font/Nunito-ExtraLight.ttf');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Nunito", sans-serif;
+    src: url('/src/assets/fonts/nunito-font/Nunito-Regular.ttf');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Nunito", sans-serif;
+    src: url('/src/assets/fonts/nunito-font/Nunito-Medium.ttf');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Nunito", sans-serif;
+    src: url('/src/assets/fonts/nunito-font/Nunito-SemiBold.ttf');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Nunito", sans-serif;
+    src: url('/src/assets/fonts/nunito-font/Nunito-Bold.ttf');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Nunito", sans-serif;
+    src: url('/src/assets/fonts/nunito-font/Nunito-ExtraBold.ttf');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Amiri", serif;
+    src: url('/src/assets/fonts/amiri-font/Amiri-Regular.ttf');
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: "Amiri", serif;
+    src: url('/src/assets/fonts/amiri-font/Amiri-Bold.ttf');
+    font-weight: 700;
+    font-style: normal;
+} */
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    overflow-x: hidden;
+    overflow-y: auto;
+    /* background-color: var(--bg-color); */
+    font-family: "Nunito", sans-serif;
+}
+
+ul {
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+}
+
+a,
+a:hover {
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Amiri", serif;
+}
+
+p {
+    color: var(--text-color);
+    margin-bottom: 0px;
+    font-weight: 400;
+}
+
+section {
+    padding: 60px 0;
+}
+
+.secHead {
+    text-align: center;
+}
+
+.secHead h6 {
+    color: var(--primary-color);
+    font-family: "Nunito", sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+.secHead h2 {
+    color: var(--secondary-color);
+    font-weight: 700;
+    font-size: 45px;
+    margin-bottom: 15px;
+}
+
+.secHead p {
+    color: var(--text-color);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+
+
+/* Banner Section Css Start   */
+
+.bannerSec {
+    width: 100%;
+    height: auto;
+    margin-top: 140px;
+}
+
+.bannerSec .swiper {
+    width: 100%;
+    height: 100%;
+}
+
+/* BannerSilder Css Start   */
+
+.bannerSec .swiper .swiper-slide {
+    background-position: center;
+    background-size: cover;
+}
+
+.bannerSec svg.swiper-navigation-icon {
+    display: none;
+}
+
+/* .swiper-button-prev.swiper-button-disabled */
+.bannerSec .swiper .swiper-button-prev.swiper-button-disabled {
+    width: 50px;
+    height: 50px;
+    background: var(--secondary-color);
+    position: absolute;
+    top: 50%;
+    left: 25px;
+    border-radius: 50%;
+}
+
+.bannerSec .swiper .swiper-button-prev.swiper-button-disabled::before {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background-image: url(/src/assets/icons/slideArrowPrev.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.bannerSec .swiper .swiper-button-next {
+    width: 50px;
+    height: 50px;
+    background: var(--secondary-color);
+    position: absolute;
+    top: 50%;
+    right: 25px;
+    border-radius: 50%;
+}
+
+.bannerSec .swiper .swiper-button-next::before {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background-image: url(/src/assets/icons/slideArrowNext.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.bannerSec .swiper-pagination {
+    bottom: 30px !important;
+}
+
+.bannerSec span.swiper-pagination-bullet {
+    width: 15px;
+    height: 15px;
+    background: var(--primary-color);
+    border: 2px solid var(--primary-color);
+}
+
+
+.sliderDiv {
+    position: relative;
+}
+
+.sliderDiv::after {
+    content: '';
+    position: absolute;
+    top: 15%;
+    left: 3%;
+    width: 3px;
+    height: 350px;
+    background: var(--primary-color);
+}
+
+.bannerSec .swiper .swiper-slide .sliderDiv .slider_content {
+    position: absolute;
+    top: 0px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* .bannerSec .swiper .swiper-slide .sliderImg {
+    display: block;
+    width: 100%;
+    height: 500px;
+    background-image: url('/src/assets/images/sliderImg1.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+} */
+
+.slider_content h4 {
+    color: var(--secondary-color);
+    font-size: 38px;
+    font-weight: 600;
+}
+
+.slider_content h1 {
+    color: var(--secondary-color);
+    font-size: 70px;
+    font-weight: 700;
+    line-height: 70px;
+}
+
+
+.slider_content h1 span {
+    color: var(--primary-color);
+}
+
+.slider_content p {
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--secondary-color);
+}
+
+.playIcon {
+    color: var(--white-color);
+}
+
+.playIconBox {
+    width: 60px;
+    height: 60px;
+    background: #e1245454;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    position: relative;
+    z-index: 0;
+}
+
+.playIconBox::before {
+    content: '';
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background: var(--primary-color);
+    z-index: -1;
+    transition: all .3s ease;
+    animation: watchplay 3s linear 2s infinite alternate;
+}
+
+@keyframes watchplay {
+    0% {
+        transform: scale(1);
+    }
+
+    25% {
+        transform: scale(1.07);
+    }
+
+    50% {
+        transform: scale(1.2);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.watchBox span {
+    color: var(--secondary-color);
+    font-size: 16px;
+    font-weight: 600;
+}
+
+/* BannerSilder Css Exit   */
+
+
+/* Banner Section Css Exit   */
+
+
+/* Business Solution Section Css Start   */
+
+.business_solution_sec {
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+.businessCard {
+    width: 100%;
+    min-height: 250px;
+    background: var(--white-color);
+    overflow: visible;
+    border-radius: 15px;
+    padding: 0 20px 30px;
+    position: relative;
+    filter: drop-shadow(0px 0px 20px rgba(0, 0, 0, 0.099));
+    border-bottom-width: 4px;
+    border-bottom-style: solid;
+    border-bottom-color: transparent;
+    transition: all .4s;
+    margin-top: 30px;
+}
+
+.businessCard::before {
+    display: block;
+    content: "";
+    position: absolute;
+    border-top: 4px solid;
+    border-top-color: transparent;
+    top: -15px;
+    left: 0px;
+    right: 0;
+    height: 50px;
+    transform: rotate(-5deg);
+    background: var(--white-color);
+    border-radius: 19px;
+    transition: all .4s;
+}
+
+.businessCard:hover::before {
+    transform: rotate(5deg);
+    border-top-color: #e12454;
+}
+
+
+.businessCard:hover {
+    border-bottom-color: #e12454;
+}
+
+.iconBox {
+    width: 70px;
+    height: 70px;
+    background: var(--primary-color);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: -30px;
+}
+
+.iconBox img {
+    width: 40px;
+    object-fit: contain;
+    position: relative;
+}
+
+.businessCard h4 {
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--secondary-color);
+    margin-bottom: 15px;
+}
+
+.businessCard p {
+    color: var(--text-color);
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0.1px;
+}
+
+.businessCard a {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--secondary-color);
+    text-transform: uppercase;
+    position: fixed;
+    bottom: 20px;
+    transition: all .4s ease;
+}
+
+.businessCard a:hover {
+    color: var(--primary-color);
+}
+
+/* Business Solution Section Css Exit   */
+
+
+/* Benefit Section Css Start   */
+
+.benefitSec {
+    width: 100%;
+    height: auto;
+    background: var(--white-color);
+    position: relative;
+}
+
+.benefitLeft {
+    width: 100%;
+    height: 100%;
+    background: var(--white-color);
+    position: relative;
+}
+
+.benefitLeftImg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding-top: 85px;
+}
+
+.benefitRight {
+    width: 100%;
+    height: 100%;
+    background: var(--secondary-color);
+    position: relative;
+    padding: 80px 80px 0px;
+}
+
+.benefitRight .secHead {
+    text-align: left;
+}
+
+.benefitRight .secHead h6 {
+    color: var(--primary-color);
+}
+
+.benefitRight .secHead h2 {
+    color: var(--white-color);
+}
+
+.benefitRight .secHead p {
+    color: rgba(255, 255, 255, .85);
+}
+
+.benefitBox {
+    display: flex;
+    align-items: center;
+}
+
+.benefitIconBox {
+    display: flex;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    justify-content: center;
+    border-radius: 4px;
+    background-color: rgba(255, 255, 255, .04);
+    margin-right: 25px;
+    border: 1px solid rgba(255, 255, 255, .11);
+    position: relative;
+}
+
+.benefitIconBox::before {
+    position: absolute;
+    content: "";
+    height: 85px;
+    width: 85px;
+    background-color: rgba(255, 255, 255, .04);
+    top: -40px;
+    left: -40px;
+    border-radius: 50%;
+}
+
+.benefitIconBox svg {
+    font-size: 40px;
+    color: var(--white-color);
+}
+
+.benefitText h4 {
+    font-size: 24px;
+    color: var(--white-color);
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.benefitText p {
+    font-size: 16px;
+    color: rgba(255, 255, 255, .85);
+    letter-spacing: 0.1px;
+    font-weight: 400;
+}
+
+.benefitIconBox::before {
+    position: absolute;
+    content: "";
+    height: 85px;
+    width: 85px;
+    background-color: rgba(255, 255, 255, .04);
+    top: -40px;
+    left: -40px;
+    border-radius: 50%;
+}
+
+.qualityContent {
+    display: flex;
+    background: var(--white-color);
+    padding: 30px 20px;
+}
+
+.qualityBox {
+    width: 100%;
+    background: var(--primary-color);
+    margin: 0px 15px;
+    border-radius: 6px;
+    padding: 30px 0px;
+    position: relative;
+    text-align: center;
+    transition: all .4s ease;
+}
+
+.qualityBox svg {
+    font-size: 35px;
+    color: var(--white-color);
+    margin-bottom: 10px;
+    transition: all .4s ease;
+    transform: translateY(0px);
+}
+
+.qualityBox:hover svg {
+    transform: translateY(-10px);
+}
+
+.qualityBox h3 {
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--white-color);
+}
+
+.qualityBox:hover,
+.qualityBox.active {
+    background-color: var(--secondary-color);
+}
+
+.qualityBox:hover h3,
+.qualityBox.active h3 {
+    color: var(--white-color);
+}
+
+/* Benefit Section Css Exit   */
+
+
+
+
+/* Strategy Section Css Start   */
+
+.strategySec {
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+.stratesyBox {
+    background: var(--white-color);
+    text-align: center;
+    padding: 35px 30px;
+    width: 100%;
+    border-radius: 3px;
+    border: 1px solid #7a8a9e33;
+    position: relative;
+    transition: all .4s ease;
+}
+
+.stratesyBox::before {
+    content: '';
+    position: absolute;
+    top: 88%;
+    left: 45%;
+    width: 25px;
+    height: 25px;
+    background: var(--white-color);
+    transform: rotate(45deg);
+    z-index: -1;
+}
+
+.stratesyBox h5 {
+    color: var(--text-color);
+    font-size: 18px;
+    font-weight: 400;
+    font-family: "Nunito", sans-serif;
+}
+
+.stratesyBox svg {
+    font-size: 35px;
+    color: var(--secondary-color);
+    margin-bottom: 10px;
+}
+
+.stratesyBox:hover,
+.stratesyBox.active {
+    background-color: var(--primary-color);
+}
+
+.stratesyBox:hover h5,
+.stratesyBox.active h5 {
+    color: var(--white-color);
+}
+
+.stratesyBox:hover svg,
+.stratesyBox.active svg {
+    color: var(--white-color);
+}
+
+.stratesyBox:hover::before,
+.stratesyBox.active::before {
+    background-color: var(--primary-color);
+}
+
+.reasonBox {
+    padding: 40px;
+    background: var(--white-color);
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 8%);
+}
+
+.reasonLeftBox h3 {
+    font-size: 32px;
+    font-weight: 600;
+    color: var(--secondary-color);
+}
+
+
+.reasonLeftBox ul li {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.reasonLeftBox ul li svg {
+    font-size: 18px;
+    width: 20px;
+    height: 20px;
+    background: var(--primary-color);
+    color: var(--white-color);
+    padding: 5px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.reasonLeftBox ul li span {
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--text-color);
+}
+
+.reasonRightBox {
+    background: var(--bg-color);
+    border-radius: 6px;
+    padding: 15px;
+}
+
+.reasonImg {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    position: relative;
+}
+
+
+
+/* Strategy Section Css Exit   */
+
+
+
+/* Testimonial Section Css Start   */
+
+.testimonialSec {
+    width: 100%;
+    height: auto;
+    position: relative;
+    background-color: var(--bg-color);
+}
+
+
+/* Testimonial Slider Css Start  */
+
+.testimonialSec .swiper {
+    width: 100%;
+    height: 100%;
+}
+
+
+.testimonialSec .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    /* background: #444; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.testimonialSec .swiper-slide img {
+    display: block;
+}
+
+/* Testimonial Slider Css Start  */
+
+.testimonialCard {
+    width: 100%;
+    height: 250px;
+    background: var(--white-color);
+    /* padding: 40px 50px; */
+    position: relative;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border-radius: 6px;
+    filter: drop-shadow(0px 2px 6px rgba(0, 0, 0, 0.09));
+}
+
+.testimonialCard::before {
+    content: '"';
+    opacity: .19;
+    font-weight: bold;
+    right: 15px;
+    top: 0;
+    position: absolute;
+    font-size: 150px;
+    line-height: 160px;
+}
+
+.borderBox {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    position: relative;
+    padding: 40px 50px;
+    border: 1px solid #ccc;
+    top: -10px;
+    left: 10px;
+    transition: all .4s ease;
+    border-radius: 6px;
+}
+
+.testimonialCard:hover .borderBox {
+    border-color: var(--primary-color);
+}
+
+.clientImg {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.testiText ul li svg {
+    font-size: 18px;
+    color: #f4c627;
+}
+
+.testiText ul {
+    display: flex;
+    align-items: center;
+}
+
+.testiText ul li {
+    margin-right: 10px;
+}
+
+.testiText h4 {
+    color: var(--secondary-color);
+    font-size: 25px;
+    font-weight: 400;
+    text-align: left;
+}
+
+.testiText h4 span {
+    color: var(--text-color);
+    font-size: 16px;
+    font-weight: 300;
+    text-align: left;
+    font-family: "Nunito", sans-serif;
+}
+
+.testimonialCard p {
+    text-align: left;
+    padding: 0;
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 400;
+    font-style: italic;
+    margin-top: 20px;
+    position: relative;
+}
+
+/* Testimonial Section Css Exit   */
+
+
+
+
+
+/* Digital Section Css Start   */
+
+.digitalSec {
+    width: 100%;
+    height: 350px;
+    background-image: url('/src/assets/images/digitalBack.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.digitalContent h6 {
+    color: var(--white-color);
+    font-family: "Nunito", sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+.digitalContent h2 {
+    color: var(--white-color);
+    font-weight: 700;
+    font-size: 45px;
+    margin-bottom: 15px;
+}
+
+.digitalSec .playIconBox {
+    width: 60px;
+    height: 60px;
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    position: relative;
+    z-index: 0;
+    border: 1px solid var(--white-color);
+}
+
+.digitalSec .playIconBox::before {
+    content: '';
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background: var(--white-color);
+    z-index: -1;
+    transition: all .3s ease;
+    animation: watchplay 3s linear 2s infinite alternate;
+}
+
+.digitalSec .playIcon {
+    color: var(--primary-color);
+}
+
+.digitalSec .watchBox span {
+    color: var(--white-color);
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+
+
+/* Digital Section Css Exit   */
+
+
+
+/* Learning Analystic Section Css Start   */
+
+.learningAnalysticSec {
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+.learningImg {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    position: relative;
+}
+
+.InnerImgDeatail {
+    position: relative;
+}
+
+.textContent {
+    position: absolute;
+    bottom: 30px;
+    left: 0px;
+    width: 100%;
+    height: auto;
+    z-index: 2;
+    padding: 0px 40px;
+}
+
+
+.InnerImgDeatail::after {
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(12, 27, 51, 0) 0%, rgba(12, 27, 51, 0) 6%, rgba(12, 27, 51, .88) 90%, rgba(12, 27, 51, .88) 100%);
+    z-index: 1;
+}
+
+.textContent span {
+    font-size: 16px;
+    color: var(--white-color);
+    font-weight: 400;
+}
+
+.textContent h3 {
+    font-size: 30px;
+    color: var(--white-color);
+    font-weight: 600;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+.textContent p {
+    color: var(--white-color);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.arrowIconBox {
+    width: 45px;
+    height: 45px;
+    border: 2px solid var(--white-color);
+    z-index: 2;
+    position: absolute;
+    top: 400px;
+    right: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.arrowIconBox svg {
+    font-size: 18px;
+    color: var(--white-color);
+}
+
+.arrowIconBox {
+    width: 45px;
+    height: 45px;
+    border: 2px solid var(--white-color);
+    z-index: 2;
+    position: absolute;
+    top: 400px;
+    right: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.arrowIconBox svg {
+    font-size: 18px;
+    color: var(--white-color);
+}
+
+.learnigRightBox button {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+    border-radius: 5px;
+    background: var(--white-color);
+    box-shadow: 0px 0px 4px 1px rgba(0 0 0 / 7%);
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: capitalize;
+    border-left: 4px solid var(--white-color);
+}
+
+.learnigRightBox button svg {
+    font-size: 40px;
+    margin-right: 20px;
+    color: var(--primary-color);
+}
+
+.learnigRightBox .css-1g77v9q-MuiButtonBase-root-MuiTab-root.Mui-selected {
+    color: var(--primary-color);
+    border-left: 4px solid var(--primary-color);
+    transition: all .4s ease;
+}
+
+.learnigRightBox .MuiTabs-list {
+    overflow: hidden;
+    height: auto;
+    display: flex;
+    justify-content: end;
+    flex-direction: column;
+}
+
+.learnigRightBox .css-oewvya-MuiTabs-indicator {
+    display: none;
+}
+
+/* Learning Analystic Section Css Exit   */
+
+
+/* Counter Section Css Start   */
+
+.counterSec {
+    width: 100%;
+    height: 450px;
+    background-image: linear-gradient(90deg, #223645c7 50%, #223645cf 100%), url(/src/assets/images/counterBackImg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.countDiv {
+    position: relative;
+}
+
+.overflowBox {
+    width: 100px;
+    height: 100px;
+    background: var(--primary-color);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    box-shadow: 0px 0px 10px var(--white-color);
+}
+
+.countIcon {
+    width: 50px;
+}
+
+.countBlock {
+    position: relative;
+    padding: 70px 30px 30px;
+    border-radius: 6px;
+    min-height: 250px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: 0.25s ease;
+    background-color: var(--secondary-color);
+    /* border: 1px solid #ccc; */
+    box-shadow: 0px 0px 20px 1px #ffffff5c;
+}
+
+.countBlock span {
+    font-size: 18px;
+    color: var(--white-color);
+    font-weight: 500;
+}
+
+
+.countBlock p {
+    color: var(--white-color);
+    font-size: 18px;
+}
+
+.countBlock h6 {
+    color: var(--primary-color);
+    font-size: 16px;
+    text-transform: uppercase;
+    font-family: "Nunito", sans-serif;
+    font-weight: 600;
+    margin-top: 15px;
+}
+
+.countSmallDiv {
+    display: flex;
+    align-items: center;
+}
+
+.countSmallDiv span {
+    font-size: 50px;
+    font-weight: bold;
+    margin-right: 10px;
+    font-family: "Amiri", serif;
+}
+
+.countSmallDiv p {
+    color: var(--white-color);
+    font-size: 50px;
+    font-weight: bold;
+    font-family: "Amiri", serif;
+}
+
+
+/* Counter Section Css Exit   */
+
+
+/* Latest News Section Css Start   */
+
+.latestNewSec {
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+.blogCard {
+    width: 100%;
+    height: auto;
+    padding: 0px;
+    background: var(--white-color);
+    position: relative;
+    border: 10px solid var(--white-color);
+    transition: all .4s;
+    box-shadow: 0 0px 8px 0 rgba(18, 29, 39, 0.16);
+}
+
+.blogCardimg {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    position: relative;
+    display: block;
+}
+
+.blogContent {
+    padding: 30px 20px 20px;
+}
+
+
+.blogDetails {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.blogCard h4 {
+    text-transform: capitalize;
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: 700;
+    color: var(--secondary-color);
+}
+
+.dateDiv {
+    background: var(--primary-color);
+    margin-right: 30px;
+    height: 60px;
+    width: 60px;
+    border-radius: 3px;
+    line-height: 19px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dateDiv h4 {
+    text-transform: capitalize;
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: 700;
+    color: var(--white-color);
+}
+
+.commentDiv {
+    display: flex;
+    align-items: center;
+}
+
+.commentDiv svg {
+    font-size: 18px;
+    color: var(--text-color);
+}
+
+.commentDiv span {
+    color: var(--text-color);
+    position: relative;
+    margin-left: 10px;
+    font-size: 14px;
+    font-style: italic;
+}
+
+.blogCard a {
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--secondary-color);
+}
+
+.blogCard a:hover {
+    transition: all .4s ease;
+    color: var(--primary-color);
+}
+
+/* Latest News Section Css Exit   */
+
+
+
+
+/* Responsive Css Start   */
+
+
+@media(max-width:1399px) {
+
+    /* .bannerSec {
+        margin-top: 95px;
+    } */
+    .sliderDiv::after {
+        left: 0%;
+    }
+}
+
+@media(max-width:1199px) {
+
+    .bannerSec {
+        margin-top: 95px;
+    }
+
+    .sliderDiv::after {
+        display: none;
+    }
+
+    .slider_content h1 {
+        font-size: 55px;
+        line-height: 60px;
+    }
+
+    .dateDiv {
+        margin-right: 15px;
+    }
+
+    .dateDiv h4 {
+        font-size: 16px;
+    }
+
+    .blogCard h4 {
+        font-size: 20px;
+    }
+
+    .secHead h2 {
+        font-size: 35px;
+    }
+
+    .businessCard h4 {
+        font-size: 20px;
+    }
+
+    .digitalContent h2 {
+        font-size: 35px;
+    }
+
+    .qualityBox h3 {
+        font-size: 18px;
+    }
+
+    .testimonialCard {
+        height: auto;
+    }
+
+
+
+}
+
+
+@media(max-width:991px) {
+
+    .bannerSec {
+        margin-top: 95px;
+    }
+
+    .slider_content h4 {
+        font-size: 32px;
+    }
+
+    .slider_content h1 {
+        font-size: 50px;
+        line-height: 60px;
+    }
+
+    .bannerSec .swiper .swiper-button-next {
+        width: 40px;
+        height: 40px;
+    }
+
+    .bannerSec .swiper .swiper-button-prev.swiper-button-disabled {
+        width: 40px;
+        height: 40px;
+    }
+
+    .bannerSec .swiper .swiper-button-prev.swiper-button-disabled::before {
+        width: 15px;
+        height: 15px;
+    }
+
+    .bannerSec .swiper .swiper-button-next::before {
+        width: 15px;
+        height: 15px;
+    }
+
+    .sliderDiv::after {
+        display: none;
+    }
+
+    .secHead h2 {
+        font-size: 32px;
+    }
+
+    section {
+        padding: 40px 0;
+    }
+
+    .benefitRight {
+        padding: 50px 80px 0px;
+    }
+
+    .stratesyBox {
+        margin-bottom: 20px;
+    }
+
+    .reasonLeftBox h3 {
+        font-size: 25px;
+    }
+
+    .reasonBox {
+        padding: 20px;
+    }
+
+    .testimonialCard {
+        width: 100%;
+        height: 280px;
+    }
+
+    .testimonialCard p {
+        font-size: 16px;
+    }
+
+    .borderBox {
+        padding: 40px 20px;
+    }
+
+    .testiText h4 {
+        font-size: 20px;
+    }
+
+
+    .testimonialCard::before {
+        font-size: 100px;
+    }
+
+    .digitalContent h2 {
+        font-size: 32px;
+    }
+
+    .digitalSec {
+        width: 100%;
+        height: auto;
+    }
+
+    .learnigRightBox button {
+        font-size: 16px;
+    }
+
+    .textContent {
+        padding: 0px 20px;
+    }
+
+    .textContent h3 {
+        font-size: 25px;
+    }
+
+    .arrowIconBox {
+        top: 220px;
+    }
+
+    .learnigRightBox button svg {
+        font-size: 32px;
+    }
+
+    .overflowBox {
+        width: 70px;
+        height: 70px;
+    }
+
+    .countIcon {
+        width: 35px;
+    }
+
+    .countSmallDiv span {
+        font-size: 35px;
+    }
+
+    .countSmallDiv p {
+        font-size: 35px;
+    }
+
+    .counterSec {
+        height: 400px;
+    }
+
+    .qualityBox h3 {
+        font-size: 20px;
+    }
+
+    .blogCard h4 {
+        font-size: 18px;
+    }
+
+}
+
+
+
+
+@media(max-width:767px) {
+    .bannerSec {
+        margin-top: 95px;
+    }
+
+    .qualityContent {
+        flex-wrap: wrap;
+    }
+
+    .qualityBox {
+        margin-bottom: 20px;
+    }
+
+    .secHead h2 {
+        font-size: 25px;
+    }
+
+    .digitalContent h2 {
+        font-size: 25px;
+    }
+
+    .counterSec {
+        height: auto;
+    }
+
+    .countBlock {
+        margin-bottom: 35px;
+    }
+
+    .businessCard {
+        min-height: 230px;
+    }
+
+    .benefitRight {
+        padding: 50px 20px 0px;
+    }
+
+    .benefitBox {
+        flex-direction: column;
+    }
+
+    .benefitIconBox {
+        margin-bottom: 20px;
+    }
+
+
+}
+
+@media(max-width:575px) {
+
+    .slider_content h1 {
+        font-size: 25px;
+        line-height: 35px;
+    }
+
+
+
+}
+
+
+@media(max-width:390px) {
+
+    .slider_content h1 {
+        font-size: 25px;
+        line-height: 35px;
+    }
+
+    .blogContent {
+        padding: 30px 5px 20px;
+    }
+
+    .subscribeForm {
+        flex-direction: column;
+    }
+
+
+
+}
+
+
+/* Responsive Css Exit   */

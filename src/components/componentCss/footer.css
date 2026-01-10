@@ -1,0 +1,360 @@
+/* Footer Section Css Start  */
+
+footer {
+    width: 100%;
+    /* height: 500px; */
+    background-image: url('/src/assets/images/footer-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-top: 60px;
+    position: relative;
+}
+
+.subscribeBox {
+    margin-bottom: 50px;
+}
+
+.subscribeLeftBox h3 {
+    font-size: 30px;
+    line-height: 36px;
+    color: var(--white-color);
+    font-weight: 600;
+}
+
+.subscribeForm {
+    padding: 25px 25px;
+    border-radius: 6px;
+    margin-top: 40px;
+    position: relative;
+    display: flex;
+    width: 100%;
+    background-color: var(--secondary-color);
+}
+
+.subscribeForm .MuiFormControl-root {
+    width: 100%;
+    background: transparent;
+    border-bottom: 1px solid #ccc;
+    color: var(--text-color);
+    border-radius: 0px;
+}
+
+.subscribeForm .MuiFormControl-root input {
+    color: var(--white-color);
+}
+
+.subscribeForm .MuiInputBase-root {
+    background: transparent;
+}
+
+.subscribeForm .MuiFormControl-root label {
+    color: var(--text-color);
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.subscribeRightBox h2 {
+    color: var(--primary-color);
+    font-size: 59px;
+    line-height: 67px;
+}
+
+.subscribeRightBox h3 {
+    color: var(--white-color);
+    font-size: 30px;
+    line-height: 35px;
+    margin-bottom: 0;
+    /* padding-right: 160px; */
+}
+
+.subscribeRightBox .offText {
+    color: var(--primary-color);
+    font-size: 18px;
+    font-family: "Amiri", serif;
+    transform: rotate(-90deg);
+    margin-left: 5px;
+}
+
+.f-Block h4,
+.f-links h4,
+.f-postBox h4,
+.f-tweetsBox h4 {
+    color: var(--white-color);
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 25px;
+    margin-bottom: 35px;
+    display: inline-block;
+    position: relative;
+}
+
+.f-Block h4::before,
+.f-links h4::before,
+.f-postBox h4::before,
+.f-tweetsBox h4::before {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0px;
+    width: 35px;
+    height: 2px;
+    background: var(--primary-color);
+}
+
+.f-Block h5 {
+    color: var(--primary-color);
+    font-size: 24px;
+    line-height: 26px;
+    font-weight: 400;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.f-Block span {
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 400;
+    color: var(--white-color);
+}
+
+.f-Block p {
+    color: var(--text-color);
+}
+
+.f-links ul li {
+    margin-bottom: 15px;
+}
+
+.f-links ul li a {
+    color: var(--white-color);
+    font-size: 16px;
+    font-weight: 400;
+    display: flex;
+    transition: all .4s ease;
+    align-items: center;
+}
+
+.f-links ul li a:hover {
+    color: var(--primary-color);
+}
+
+.f-links ul li a svg {
+    font-size: 18px;
+    margin-right: 15px;
+    color: var(--primary-color);
+}
+
+.f-links ul li a:hover svg {
+    color: var(--primary-color);
+}
+
+.postInner {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.postInner img {
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+    position: relative;
+}
+
+.postContent h5 {
+    color: var(--white-color);
+    font-size: 16px;
+    line-height: 23px;
+    display: block;
+    font-weight: 400;
+    position: relative;
+    overflow: hidden;
+    font-family: "Nunito", sans-serif;
+    margin-bottom: 10px;
+}
+
+.postContent span {
+    color: yellow;
+    display: block;
+    font-size: 13px;
+    line-height: 20px;
+    margin-bottom: 0;
+    color: rgba(255, 255, 255, .5);
+}
+
+.postContent {
+    margin-left: 17px;
+}
+
+.tweetsInner svg {
+    font-size: 60px;
+    color: var(--primary-color);
+}
+
+.tweetsInner {
+    display: flex;
+    align-items: flex-start;
+}
+
+.tweetsInner p {
+    font-size: 16px;
+    line-height: 26px;
+    position: relative;
+    margin-bottom: 12px;
+}
+
+.tweetsInner h6 {
+    color: var(--white-color);
+    font-size: 18px;
+    font-family: "Nunito", sans-serif;
+}
+
+.copyright {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #ccc;
+    padding-top: 30px;
+    margin-top: 30px;
+    padding-bottom: 30px;
+}
+
+.copyright p {
+    color: var(--white-color);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.footerLogo {
+    max-width: 100%;
+    height: auto;
+    max-height: 37px;
+}
+
+.f-socialBox ul {
+    display: flex;
+    align-items: center;
+}
+
+.f-socialBox ul li {
+    margin-left: 20px;
+}
+
+.f-socialBox ul li a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45px;
+    height: 45px;
+    background: rgba(255, 255, 255, .07);
+    border-radius: 50%;
+    transition: all .4s ease;
+    transform: scale(1);
+}
+
+.f-socialBox ul li a:hover {
+    background-color: var(--primary-color);
+    transform: scale(1.09);
+}
+
+.f-socialBox ul li a svg {
+    font-size: 18px;
+    color: var(--white-color);
+}
+
+.f-socialBox ul li a:hover svg {
+    color: var(--white-color);
+}
+
+
+
+
+/* Footer Section Css Exit  */
+
+
+
+/* Responsive Css Start  */
+
+@media(max-width:1199px) {
+
+    .subscribeLeftBox h3 {
+        font-size: 25px;
+    }
+
+    .subscribeRightBox h2 {
+        font-size: 45px;
+        line-height: 50px;
+    }
+
+    .subscribeRightBox h3 {
+        font-size: 25px;
+    }
+
+}
+
+@media(max-width:991px) {
+
+    .subscribeRightBox h2 {
+        font-size: 45px;
+    }
+
+}
+
+@media(max-width:767px) {
+    .css-1coa9v3 {
+        background-image: url(/src/assets/images/sliderImg1.jpg);
+        width: 100%;
+        height: 400px;
+        background-repeat: no-repeat;
+        -webkit-background-position: center;
+        background-position: center;
+        -webkit-background-size: cover;
+        background-size: cover;
+    }
+
+    .slider_content h1 {
+        font-size: 35px;
+        line-height: 45px;
+    }
+
+    .bannerSec .swiper .swiper-slide .sliderDiv .slider_content {
+        height: 400px;
+    }
+
+    .copyright {
+        align-items: start;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+
+    .footerLogo {
+        margin: 30px 0px;
+    }
+
+    .f-socialBox ul li {
+        margin-left: 0px;
+        margin-right: 20px;
+    }
+
+
+
+}
+
+@media(max-width:390px) {
+
+    .f-Block h4,
+    .f-links h4,
+    .f-postBox h4,
+    .f-tweetsBox h4 {
+        font-size: 20px;
+    }
+
+    .subscribeRightBox h3 {
+        font-size: 20px;
+    }
+
+
+}
+
+/* Responsive Css Exit  */
